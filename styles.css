@@ -1,0 +1,104 @@
+.penguin-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.penguin {
+  width: 1rem;
+  height: 1rem;
+  animation: moveUpDown 2s infinite;
+  box-shadow:
+    /* first and second line with bow and top of head */
+    2rem -1rem pink, 4rem -1rem pink,
+    1rem 0 black, 2rem 0 black, 3rem 0 pink,
+    4rem 0 black, 5rem 0 black,
+
+    /* third line */
+    0rem 1rem black, 1rem 1rem black, 2rem 1rem black,
+    3rem 1rem black, 4rem 1rem black, 5rem 1rem black,
+    6rem 1rem black,
+
+    /* fourth line */
+    -1rem 2rem black, 0rem 2rem black, 1rem 2rem black,
+    2rem 2rem black, 3rem 2rem black, 4rem 2rem black,
+    5rem 2rem black, 6rem 2rem black, 7rem 2rem black,
+
+    /* fifth line */
+    -2rem 3rem black, -1rem 3rem black, 0rem 3rem white,
+    1rem 3rem white, 2rem 3rem black, 3rem 3rem black,
+    4rem 3rem black, 5rem 3rem white, 6rem 3rem white,
+    7rem 3rem black, 8rem 3rem black,
+
+    /* sixth line */
+    -3rem 4rem black, -2rem 4rem black, -1rem 4rem white,
+    0rem 4rem white, 1rem 4rem white, 2rem 4rem white,
+    3rem 4rem black, 4rem 4rem white, 5rem 4rem white,
+    6rem 4rem white, 7rem 4rem white, 8rem 4rem black,
+    9rem 4rem black,
+
+    /* seventh line with eyes*/
+    -3rem 5rem black, -2rem 5rem black, -1rem 5rem white,
+    0rem 5rem white, 1rem 5rem black, 2rem 5rem white,
+    3rem 5rem black, 4rem 5rem white, 5rem 5rem black,
+    6rem 5rem white, 7rem 5rem white, 8rem 5rem black,
+    9rem 5rem black,
+
+    /* eighth line with blush and beak*/
+    -5rem 6rem black, -4rem 6rem black, -3rem 6rem black, -2rem 6rem white, -1rem 6rem pink,
+    0rem 6rem pink, 1rem 6rem white, 2rem 6rem white,
+    3rem 6rem yellow, 4rem 6rem white, 5rem 6rem white,
+    6rem 6rem pink, 7rem 6rem pink, 8rem 6rem white,
+    9rem 6rem black, 10rem 6rem black, 11rem 6rem black,
+
+    /* nineth line */
+    -3rem 7rem black, -4rem 7rem black, -2rem 7rem black, -1rem 7rem white,
+    0rem 7rem white, 1rem 7rem white, 2rem 7rem white,
+    3rem 7rem white, 4rem 7rem white, 5rem 7rem white,
+    6rem 7rem white, 7rem 7rem white, 8rem 7rem black, 9rem 7rem black, 9rem 7rem black, 10rem 7rem black,
+
+    /* tenth line */
+    -3rem 8rem black, -2rem 8rem white, -1rem 8rem white,
+    0rem 8rem white, 1rem 8rem white, 2rem 8rem white,
+    3rem 8rem white, 4rem 8rem white, 5rem 8rem white,
+    6rem 8rem white, 7rem 8rem white, 8rem 8rem white, 9rem 8rem black,
+
+    /* eleventh line */
+    -3rem 9rem black, -2rem 9rem white, -1rem 9rem white,
+    0rem 9rem white, 1rem 9rem white, 2rem 9rem white,
+    3rem 9rem white, 4rem 9rem white, 5rem 9rem white,
+    6rem 9rem white, 7rem 9rem white, 8rem 9rem white, 9rem 9rem black,
+
+    /* twelth line */
+    -3rem 10rem black, -2rem 10rem white, -1rem 10rem white,
+    0rem 10rem white, 1rem 10rem white, 2rem 10rem white,
+    3rem 10rem white, 4rem 10rem white, 5rem 10rem white,
+    6rem 10rem white, 7rem 10rem white, 8rem 10rem white, 9rem 10rem black,
+
+    /* thirdteenth line */
+    -2rem 11rem black, -1rem 11rem white,
+    0rem 11rem white, 1rem 11rem white, 2rem 11rem white,
+    3rem 11rem white, 4rem 11rem white, 5rem 11rem white,
+    6rem 11rem white, 7rem 11rem white, 8rem 11rem black,
+
+    /* last line with feet*/
+    -1rem 12rem black,
+    0rem 12rem yellow, 1rem 12rem yellow, 2rem 12rem black,
+    3rem 12rem black, 4rem 12rem black, 5rem 12rem yellow,
+    6rem 12rem yellow, 7rem 12rem black
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-30px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
